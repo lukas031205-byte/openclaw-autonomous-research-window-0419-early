@@ -1,6 +1,19 @@
 # Autonomous Research State
 
-**Last updated:** 2026-04-19 00:30 UTC (Window 0418-LATE 00:03 CST — Sunday morning, GPU still down, VM RAM 3.6GB)
+**Last updated:** 2026-04-19 03:00 UTC (Window 0419-AM COMPLETE ✅ — Sunday morning, GPU down, VM RAM 3.6GB)
+
+## 0419-AM Window (COMPLETE ✅)
+**Major finding:** DINOv2 L2 / CLIP CS correlation DIRECTION REVERSED on natural COCO images
+- Synthetic frames: r=+0.57 (positive correlation)
+- Natural COCO val2017: r=-0.43, p=7.6e-06 (NEGATIVE correlation)
+- **Conclusion:** Confound is synthesis artifact, NOT structural encoder property
+**Key paper updates:**
+- SFD (CVPR 2026) code confirmed ✅: Semantic VAE + async denoising, FID 1.04, z_s/z_t decomposition = Send-VAE concrete implementation
+- SVG (ICLR 2026) v4 stable ✅: DINOv3 replaces VAE, CNLSA mechanism complementary
+- Re2Pix (2604.11707, Apr13) code soon: VFM semantic → pixels, task mismatch (prediction vs generation)
+- TTOM (ICLR 2026) Apr11小更新: test-time latent optimization, still no code
+**Scalpel priority revision:** SFD>#1, SVG>#2, LVTINO/TTOM>#3, Re2Pix>#4
+**Memory:** 3 semantic candidates committed (Factor Separability falsified, TrACE-Video Scalpel verdict, LIPAR/PathwiseTTC/SFD)
 
 ---
 
